@@ -1,0 +1,9 @@
+.neighbourCountryCard {
+    cursor: pointer;
+}
+.neighbourCountryCard img{
+    height: 110px;
+}
+.details{
+    opacity: 0;
+}
