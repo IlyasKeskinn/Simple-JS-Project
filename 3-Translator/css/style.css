@@ -1,0 +1,16 @@
+
+.custom-select-width {
+    width: 100px ;
+}
+textarea{
+    resize: none;
+}
+#translator-header .lang-controls *{
+    margin-right: 5px;
+}
+#translator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
