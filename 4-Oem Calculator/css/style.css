@@ -1,0 +1,4 @@
+tr.active{
+    border: 2px rgb(217, 227, 159) solid !important; 
+    border-radius: 5px !important;
+}

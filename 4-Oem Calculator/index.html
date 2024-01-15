@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oem Calculator</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Oem Calculator</a>
+        </div>
+    </nav>
+
+    <section class="container">
+
+        <div class="card p-3 mt-3 ">
+            <form>
+                <div class="row my-2">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Name" id="nameInput">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Price" id="priceInput">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm add-btn"><i class="fa-solid fa-plus"></i>
+                    Add</button>
+                <button type="submit" class="btn btn-danger btn-sm delete-btn"><i class="fa-solid fa-times"></i>
+                    Delete</button>
+                <button type="submit" class="btn btn-warning btn-sm update-btn"><i
+                        class="fa-solid fa-arrow-up-from-bracket"></i>
+                    Change</button>
+                <button type="submit" class="btn btn-secondary btn-sm cancel-btn"><i class="fa-solid fa-arrow-left"></i>
+                    Cancel</button>
+            </form>
+        </div>
+
+        <div class="card p-3 mt-5 itemCard">
+            <table class="table table-striped">
+                <tbody id="itemList">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card totalCard mt-3">
+            <div class="card-footer">
+                <div class="infoText text-end">
+                    <p class="h6">Total: <strong><span class="totalTL"></span> TL</strong></p>
+                    <p class="h6">Total: <strong><span class="totalDolar"></span> $</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="js/StorageController.js"></script>
+    <script src="js/ProductController.js"></script>
+    <script src="js/UIController.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
